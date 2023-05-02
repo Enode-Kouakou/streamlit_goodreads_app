@@ -1,9 +1,9 @@
 pipeline{
-	agent {label {'maître'}}
+	agent any
 	stages {
         stage('build') {
             steps {
-		sh 'echo $JENKINS_HOME/Python310/'
+		echo '$JENKINS_HOME/Python310/'
             }
         }
     }
