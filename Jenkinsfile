@@ -3,7 +3,7 @@ pipeline{
 	stages {
         stage('build') {
             steps {
-		echo '$JENKINS_HOME/Python310/'
+		echo $JENKINS_HOME.'/Python310/'
             }
         }
     }
