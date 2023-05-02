@@ -1,10 +1,9 @@
 pipeline{
-	agent {'maître'}
+	agent {'none'}
 	stages {
         stage('build') {
             steps {
-		echo '$JENKINS_HOME/Python310/'
-                echo 'python --version'
+		sh 'echo $JENKINS_HOME/Python310/'
             }
         }
     }
