@@ -4,7 +4,7 @@ pipeline{
         stage('build') {
             steps {
 		sh 'python3 --version'
-		sh 'python3 -m venv ./'
+		sh 'python3 -m pip install ./requirements.txt'
             }
         }
     }
