@@ -3,7 +3,7 @@ pipeline{
 	stages {
         stage('build') {
             steps {
-		sh './var/jenkins_home/Python310/python.exe ./book.py/'
+		sh 'python3 --version'
             }
         }
     }
